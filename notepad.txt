@@ -1,0 +1,31 @@
+<h2>Flights</h2>
+
+<form method="POST" action="/search">
+Search by Date
+<input type="date" name="date">
+<button type="submit">Search</button>
+</form>
+
+<a href="/add_flight">Add Flight</a>
+<a href="/my_bookings">My Bookings</a>
+<a href="/logout">Logout</a>
+
+<hr>
+
+{% for flight in flights %}
+
+<p>
+
+Flight: {{ flight.flight_number }}
+
+{{ flight.source }} → {{ flight.destination }}
+
+{{ flight.date }} {{ flight.time }}
+
+<a href="/book/{{flight.id}}">Book</a>
+
+<a href="/remove/{{flight.id}}">Remove</a>
+
+</p>
+
+{% endfor %}

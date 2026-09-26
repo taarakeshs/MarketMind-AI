@@ -1,0 +1,22 @@
+pandas>=2.2
+numpy>=1.26
+yfinance>=0.2.50
+scikit-learn>=1.5
+xgboost>=2.1
+lightgbm>=4.5
+tensorflow>=2.17
+matplotlib>=3.9
+seaborn>=0.13
+plotly>=5.24
+streamlit>=1.40
+joblib>=1.4
+requests>=2.32
+lxml>=5.3
+openpyxl>=3.1
+# API server
+fastapi>=0.115
+uvicorn[standard]>=0.30
+aiofiles>=23.0
+python-dotenv>=1.0
+# Parquet support (required by pandas read_parquet / to_parquet)
+pyarrow>=16.0
